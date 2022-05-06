@@ -1,12 +1,10 @@
-import os
 import argparse
+import os
+from typing import Final, Optional
+from urllib.parse import urlparse
 
 import requests
-
-from typing import Optional, Final
-from urllib.parse import urlparse
 from dotenv import load_dotenv
-
 
 RESOURCE_URL: Final = "https://api-ssl.bitly.com/v4/bitlinks"
 
